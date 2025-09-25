@@ -1,1 +1,169 @@
+ <div align="center">
+   <h1 align="center">
+    AjudaAí - Aplicativo de Emergência
+    <br />
+    <br />
+ <img width="200" height="282" alt="A ajuda em apenas um clique (1)" src="https://github.com/user-attachments/assets/74c8a25d-8a52-4e0f-b8f7-f709c2fa256e" />
+
+ </h1>   
+</div>
+ 
+##  Introdução
+
+O **AjudaAí** é um aplicativo de **segurança e auxílio rápido** desenvolvido por alunos do **SENAI Petrópolis**.  
+Seu objetivo é otimizar o tempo de resposta em situações de emergência por meio do envio de **alertas geolocalizados** para órgãos públicos e contatos pessoais.  
+
+---
+
+
+##  Funcionalidades
+
+### Emergência Rápida
+- Botões diretos para **SAMU (192)**, **Bombeiros (193)** e **Defesa Civil (199)**
+- Envio de alertas com **localização GPS em tempo real**
+- Interface otimizada para situações de estresse
+
+### Contatos de Emergência
+- Cadastro de contatos pessoais de confiança
+- Notificação automática em casos críticos
+- Classificação por prioridades
+
+### Alertas Personalizados
+- Criação de mensagens específicas para diferentes situações
+- **Modo discreto** para casos como assaltos
+- Configuração de destinatários e níveis de urgência
+
+### Geolocalização
+- Integração inicial com **Google Maps API**
+- Compatível com alternativas como **OpenStreetMap** e **Mapbox**
+- Compartilhamento automático da posição
+- Funciona offline utilizando a última localização conhecida
+
+---
+
+##  Tecnologias
+
+- Next.js (React + TypeScript) – Framework principal  
+- TailwindCSS – Estilização moderna e responsiva  
+- Shadcn/UI – Componentes de interface prontos e acessíveis  
+- PWA (Progressive Web App) – Instalação no celular ou desktop  
+- Service Worker (sw.js) – Funcionalidade offline e cache inteligente  
+- Google Maps API – Geolocalização em tempo real  
+- Manifest.json – Configuração para app instalável  
+
+---
+
+##  Como Usar
+
+### Instalação Local
+
+```bash
+# Clone este repositório
+git clone https://github.com/seu-usuario/ajudaai-app.git
+cd ajudaai-app
+
+# Instale as dependências
+pnpm install
+# ou
+npm install
+
+# Inicie o servidor de desenvolvimento
+pnpm dev
+# ou
+npm run dev
+
+#Acesse no navegador
+ex:http://localhost:3000
+
+```
+--- 
+
+### Uso Básico
+
+- Emergência → Toque no botão do serviço desejado
+
+- Contatos → Configure sua rede de pessoas de confiança
+
+- Alertas → Crie mensagens rápidas personalizadas
+
+- Alerta Discreto → Use em situações delicadas (ex.: assalto)
+
+---
+
+```bash
+# Pode sofrer alterações
+ajudaai-app/
+├── app/
+│   ├── page.tsx                 # Página principal
+│   ├── layout.tsx               # Layout padrão
+│   ├── globals.css              # Estilos globais
+│   └── components/              # Componentes do app
+│       ├── emergency-map.tsx    # Mapa de emergências
+│       ├── emergency-contacts.tsx # Contatos de emergência
+│       ├── custom-alerts.tsx    # Alertas personalizados
+│
+├── components/ui/               # Biblioteca de UI (shadcn)
+├── public/                      # Ícones, imagens e assets
+├── sw.js                        # Service Worker (offline/PWA)
+├── manifest.json                # Configuração PWA
+├── package.json                 # Dependências e scripts
+├── tailwind.config.ts           # Configuração TailwindCSS
+└── tsconfig.json                # Configuração TypeScript
+
+```
+---
+
+### Diferenciais Técnicos
+
+- Interface centrada em mapa para emergências
+
+- PWA instalável (funciona como app nativo no celular)
+
+- Funcionalidade offline com cache e última localização
+
+- Escalável para diferentes cidades e contextos
+
+- Alto impacto social com foco em segurança urbana e desastres naturais
+
+---
+
+### Configuração
+
+### Permissões Necessárias
+
+- Localização: para GPS em tempo real
+
+- Notificações: para alertas do sistema
+
+- Vibração: para feedback tátil
+
+### Navegadores Suportados
+
+- Chrome 89+
+
+- Firefox 85+
+
+- Safari 14+
+
+- Edge 89+
+
+---
+
+### Equipe de Desenvolvimento
+
+Projeto desenvolvido por alunos do SENAI Petrópolis:
+
+- André Mazala Carius
+
+- Arthur Santos Oliveira
+
+- Caio Santos Oliveira
+
+- Fábio de Carvalho Leal
+
+- Frederico Bassoto Villa Campo
+
+Orientador: Felippe do Nascimento
+
+
 
